@@ -1,0 +1,27 @@
+Simple Linear Regression on Auto Dataset
+This project uses simple linear regression techniques to analyze the Auto dataset. The analysis focuses on examining the relationships between mpg (miles per gallon) and 
+other key variables such as horsepower, weight, and acceleration.
+
+Project Overview
+Correlation Analysis:Calculate the correlation between mpg and other variables (horsepower, weight, and acceleration) to understand the strength and direction of their relationships.
+
+Scatter Plots:
+Visualize the relationships between mpg and other variables using scatter plots.
+Include both scatter plots with and without confidence intervals (CI) to highlight trends and variability.
+
+Simple Linear Regression Models:
+
+Build linear regression models to predict mpg based on:
+Horsepower
+Weight
+Use the models to interpret the impact of an increase in horsepower or weight on mpg.
+Predictions:
+
+Predict mpg for specific car attributes, such as:
+A car with 190 horsepower
+A car weighing 4000 lbs
+
+Key Objectives
+Understand the relationships between mpg and other important automotive variables.
+Use regression models to predict mpg based on given horsepower and weight values.
+Interpret the correlations and regression results to identify patterns in the dataset.
