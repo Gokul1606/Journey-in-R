@@ -1,0 +1,29 @@
+Predicting CRS Scores for Canada Express Entry Using Linear Regression
+
+Overview
+This project aims to develop a predictive model using linear regression to estimate the Comprehensive Ranking System (CRS) scores in Canada's Express Entry immigration system. 
+
+The CRS score is a critical cut-off that determines eligibility for permanent residency. This model uses historical data from express entry rounds, specifically focusing on internal factors such as:
+1. Number of invitations issued
+2. Round type
+3. Time of year
+
+By leveraging R and the RSelenium package for web scraping, historical express entry data was gathered from official sources and processed for analysis. Various models were tested, including simple, interaction, and polynomial regression, with the ultimate goal of identifying a model that best predicts future CRS cut-off scores based on past trends.
+
+Disclaimer: This model does not include external factors like political changes or new immigration policies, which can also affect CRS scores. It is intended for educational and exploratory purposes.
+
+Key Findings
+Interaction Model was found to be the most effective, with an R-squared value of 91%, indicating a strong predictive power.
+Number of invitations has a strong negative correlation with CRS scores, meaning as the number of invitations increases, the CRS score tends to decrease.
+The model predicts that a round with 4,500 invitations for STEM occupations in December 2024 would have a CRS score of approximately 470, aligning with recent trends.
+Provincial Nominee Program (PNP) rounds were identified as outliers due to their consistently high CRS scores (above 600), impacting the linear relationship.
+Further improvements can be made by incorporating external factors and exploring non-linear modeling techniques.
+
+How to Run
+Install the required packages (RSelenium, dplyr, lubridate, etc.).
+Use the provided R scripts to scrape data and preprocess it.
+Train the linear regression models with the preprocessed data.
+Use the interaction model for future CRS score predictions based on input variables.
+
+License
+This project is for academic and educational purposes and comes with no warranty of predictive accuracy for future express entry rounds.
